@@ -3,84 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title> Registration Form</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <form>
-        <div>
-		<fieldset class="fieldset1">
-			<legend><h3>Personal Details</h3></legend>
-			<table>
-				<tr>
-					<td><label for="firstName">First Name</label></td>
-					<td>
-						<input type="text" id="firstName" placeholder="Enter you first name" required>
-					</td>
-				</tr>
-                <tr>
-					<td><label for="lastName">Last Name</label></td>
-					<td>
-						<input type="text" id="lastName" placeholder="Enter your last name" required>
-					</td>
-				</tr>
-				
-				<tr>
-					<td><label for="address">Address</label></td>
-					<td>
-						<input type="text" id="address" placeholder="Enter Your Address">
-					</td>
-				</tr>
-				<tr>
-					<td><label for="age">Age</label></td>
-					<td>
-						<input type="number" id="age" placeholder="Enter Your Age">
-					</td>
-				</tr>
-			</table>
-		</fieldset>
-        </div>
 
-        <div class="fieldset2">
-            <fieldset>
-                <legend><h3>Other Information</h3></legend>
+    <form action="">
+        <fieldset>
+            <legend><h1>Student Registration Form</h1></legend>
+            <div class="table-container">
                 <table>
                     <tr>
-                        <td><label for="">Gender</label></td>
+                        <td><label for="idNumber">ID Number:</label> </td>
                         <td>
-                            <input type="radio" name="gender" id="Male"><label for="Male">Male</label>
-                            <input type="radio" name="gender" id="Female"><label for="Female">Female</label>
-                            <input type="radio" name="gender" id="Other"><label for="Other">Other</label>
-
+                            <input type="number" id="idNumber"required placeholder="Enter ID number">
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="dateOfBirth">Date of Birth</label></td>
+                        <td><label for="name">Student Name:</label></td>
                         <td>
-                            <input type="date" id="dateOfBirth">
+                            <input type="text" id="name" placeholder="Enter full name" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="number">Mobile Number</label></td>
+                        <td><label for="gname">Guardian Name:</label></td>
                         <td>
-                            <input type="number" id="number" placeholder="Enter mobile number">
+                            <input type="text" id="gname" placeholder="Enter full name" required>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="Email">Email</label></td>
+                        <td><label for="date">Date of Birth</label></td>
                         <td>
-                            <input type="email" id="Email" placeholder="Enter your email">
+                            <input type="date" name="" id="date">
                         </td>
                     </tr>
                     <tr>
+                        <td><label for="mobilenumber">Mobile Number:</label></td>
                         <td>
-                        <input type="submit">
+                            <input type="number" value="+63" id="mobilenumber"required placeholder="Enter mobile number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail ID:</label></td>
+                        <td>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td>
+                                <label for="male" style="color: black;font-weight: normal;">Male</label>
+                                <input type="radio" name="gender" id="male" style="margin-right: 10px;">
+                                <label for="female" style="color: black;font-weight: normal;">Female</label>
+                                <input type="radio" name="gender" id="female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dep">School/ Department: </label></td>
+                        <td>
+                                <label for="sit" style="color: black;font-weight: normal;">SIT</label>
+                                <input type="checkbox" name="dep" id="sit" style="margin-right: 10px;">
+                                <label for="sn" style="color: black;font-weight: normal;">SN</label>
+                                <input type="checkbox" name="dep" id="sn" style="margin-right: 10px;">
+                                <label for="stela" style="color: black;font-weight: normal;">STELA</label>
+                                <input type="checkbox" name="dep" id="stela" style="margin-right: 10px;">
+                                <label for="sbaa" style="color: black;font-weight: normal;">SBAA</label>
+                                <input type="checkbox" name="dep" id="sbaa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="course">Course:</label></td>
+                        <td>
+                            <select id="course">
+                                <option disabled selected style="text-align: center;">Select Course</option>
+                                <option>Bachelor of Science in Information Technology</option>
+                                <option>Bachelor of Science in Computer Science</option>
+                                <option>Bachelor of Science in Nursing</option>
+                                <option>Bachelor of Science in Acountancy</option>
+                                <option>Bachelor of Science in Elementary Education</option>
+                                <option>Bachelor of Science in Psycology</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
                         </td>
                     </tr>
                 </table>
-            </fieldset>
-        </div> 
-        
-	</form>
+            </div>
+        </fieldset>
+    </form>
+    
 </body>
 </html>
