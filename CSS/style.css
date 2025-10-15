@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+fieldset{
+	width: 1000px;
+	margin: auto;
+    border: 1px solid pink;
+
+}
+
+fieldset table{
+	border: 1px solid silver;
+	width:1000px;
+	margin:auto;
+    
+}
+fieldset table tr td{
+	padding:10px;
+}
+fieldset table tr td input[type=text], input[type=number]{
+	padding:10px;
+	font-size: 12pt;
+	width: 93%;
+}
+
+fieldset table tr td input[type=submit]{
+	padding:10px;
+	background-color: black;
+	color:whitesmoke;
+	border: 1px solid silver;
+	border-radius: 5px;
+	font-size: 12pt;
+}
+fieldset table tr td input[type=submit]:hover{
+	background-color: maroon;
+	cursor:pointer;
+}
+.fieldset1{
+    margin-top: 20px;
+}
+.fieldset2{
+    margin-top: 20px;
+}
+legend{
+    margin-left: 10px;
+}
