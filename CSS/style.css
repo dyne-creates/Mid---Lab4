@@ -2,46 +2,64 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 fieldset{
 	width: 1000px;
 	margin: auto;
-    border: 1px solid pink;
-
+    border: 1px solid #d1b3ff;
+    border-radius: 10px;
+    background-color: white;
 }
-
+fieldset legend{
+    text-align: center;
+}
+fieldset legend h1{
+    text-align: center;
+    color: #6a0dad;
+}
+.table-container{
+    margin: 20px;
+}
 fieldset table{
-	border: 1px solid silver;
-	width:1000px;
-	margin:auto;
-    
+	border: 1px solid #d1b3ff;
+	width:800px;
+    margin: auto;
+    border-radius: 5px;
 }
 fieldset table tr td{
 	padding:10px;
 }
-fieldset table tr td input[type=text], input[type=number]{
+fieldset table tr td label{
+    color: #8e44ad;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+fieldset table tr td input[type=text], input[type=number], input[type=email], input[type=date], input[type=password], select{
 	padding:10px;
 	font-size: 12pt;
 	width: 93%;
+    border: 1px solid #d1b3ff;
+    border-radius: 7px;
 }
-
-fieldset table tr td input[type=submit]{
-	padding:10px;
-	background-color: black;
-	color:whitesmoke;
-	border: 1px solid silver;
-	border-radius: 5px;
-	font-size: 12pt;
-}
-fieldset table tr td input[type=submit]:hover{
-	background-color: maroon;
-	cursor:pointer;
-}
-.fieldset1{
-    margin-top: 20px;
-}
-.fieldset2{
-    margin-top: 20px;
-}
-legend{
+fieldset table tr td button{
     margin-left: 10px;
+	padding:10px;
+    width: 90px;
+    letter-spacing: 1px;
+	background-color: #4b0082;
+	color:white;
+	border: 1px solid #d1b3ff ;
+	border-radius: 10px;
+	font-size: 12pt;
+    font-weight: bolder;
+    float: right;
+}
+fieldset table tr td button:hover{
+	background-color: lightslategray;
+    width: 95px;
+    letter-spacing: 1px;
+	cursor:pointer;
 }
