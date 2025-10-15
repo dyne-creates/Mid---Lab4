@@ -5,9 +5,11 @@
 body{
     background-color: whitesmoke;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
 }
 fieldset{
-	width: 1000px;
+	width: 100%;
+    max-width: 900px;
 	margin: auto;
     border: 1px solid #d1b3ff;
     border-radius: 10px;
@@ -25,7 +27,7 @@ fieldset legend h1{
 }
 fieldset table{
 	border: 1px solid #d1b3ff;
-	width:800px;
+	width:100%;
     margin: auto;
     border-radius: 5px;
 }
@@ -37,7 +39,13 @@ fieldset table tr td label{
     font-weight: bolder;
     font-size: 13pt;
 }
-fieldset table tr td input[type=text], input[type=number], input[type=email], input[type=date], input[type=password], select{
+fieldset table tr td 
+input[type=text], 
+input[type=number], 
+input[type=email], 
+input[type=date], 
+input[type=password], 
+select{
 	padding:10px;
 	font-size: 12pt;
 	width: 93%;
